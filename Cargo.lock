@@ -10274,51 +10274,6 @@ dependencies = [
 [[package]]
 name = "sp-core"
 version = "6.0.0"
-dependencies = [
- "base58",
- "bitflags",
- "blake2-rfc",
- "byteorder",
- "dyn-clonable",
- "ed25519-dalek",
- "futures 0.3.21",
- "hash-db",
- "hash256-std-hasher",
- "hex",
- "impl-serde",
- "lazy_static",
- "libsecp256k1",
- "log",
- "merlin",
- "num-traits",
- "parity-scale-codec",
- "parity-util-mem",
- "parking_lot 0.12.1",
- "primitive-types",
- "rand 0.7.3",
- "regex",
- "scale-info",
- "schnorrkel",
- "secp256k1",
- "secrecy",
- "serde",
- "sp-core-hashing 4.0.0",
- "sp-debug-derive 4.0.0",
- "sp-externalities 0.12.0",
- "sp-runtime-interface 6.0.0",
- "sp-std 4.0.0",
- "sp-storage 6.0.0",
- "ss58-registry",
- "substrate-bip39",
- "thiserror",
- "tiny-bip39",
- "wasmi",
- "zeroize",
-]
-
-[[package]]
-name = "sp-core"
-version = "6.0.0"
 source = "git+https://github.com/paritytech/substrate?branch=polkadot-v0.9.25#3348e144f0a2b39ce08bd8e3b976c42fe0c990b9"
 dependencies = [
  "base58",
@@ -10363,16 +10318,49 @@ dependencies = [
 ]
 
 [[package]]
-name = "sp-core-hashing"
-version = "4.0.0"
+name = "sp-core"
+version = "6.0.0"
+source = "git+https://github.com/sora-xor/substrate.git?branch=polkadot-v0.9.25-xcm-v3-and-bridges#826270f14904f24a6cc90b5cbd1c49da00660c2f"
 dependencies = [
- "blake2",
+ "base58",
+ "bitflags",
+ "blake2-rfc",
  "byteorder",
- "digest 0.10.3",
- "sha2 0.10.2",
- "sha3 0.10.1",
- "sp-std 4.0.0",
- "twox-hash",
+ "dyn-clonable",
+ "ed25519-dalek",
+ "futures 0.3.21",
+ "hash-db",
+ "hash256-std-hasher",
+ "hex",
+ "impl-serde",
+ "lazy_static",
+ "libsecp256k1",
+ "log",
+ "merlin",
+ "num-traits",
+ "parity-scale-codec",
+ "parity-util-mem",
+ "parking_lot 0.12.1",
+ "primitive-types",
+ "rand 0.7.3",
+ "regex",
+ "scale-info",
+ "schnorrkel",
+ "secp256k1",
+ "secrecy",
+ "serde",
+ "sp-core-hashing 4.0.0 (git+https://github.com/sora-xor/substrate.git?branch=polkadot-v0.9.25-xcm-v3-and-bridges)",
+ "sp-debug-derive 4.0.0 (git+https://github.com/sora-xor/substrate.git?branch=polkadot-v0.9.25-xcm-v3-and-bridges)",
+ "sp-externalities 0.12.0 (git+https://github.com/sora-xor/substrate.git?branch=polkadot-v0.9.25-xcm-v3-and-bridges)",
+ "sp-runtime-interface 6.0.0 (git+https://github.com/sora-xor/substrate.git?branch=polkadot-v0.9.25-xcm-v3-and-bridges)",
+ "sp-std 4.0.0 (git+https://github.com/sora-xor/substrate.git?branch=polkadot-v0.9.25-xcm-v3-and-bridges)",
+ "sp-storage 6.0.0 (git+https://github.com/sora-xor/substrate.git?branch=polkadot-v0.9.25-xcm-v3-and-bridges)",
+ "ss58-registry",
+ "substrate-bip39",
+ "thiserror",
+ "tiny-bip39",
+ "wasmi",
+ "zeroize",
 ]
 
 [[package]]
@@ -10386,6 +10374,20 @@ dependencies = [
  "sha2 0.10.2",
  "sha3 0.10.1",
  "sp-std 4.0.0 (git+https://github.com/paritytech/substrate?branch=polkadot-v0.9.25)",
+ "twox-hash",
+]
+
+[[package]]
+name = "sp-core-hashing"
+version = "4.0.0"
+source = "git+https://github.com/sora-xor/substrate.git?branch=polkadot-v0.9.25-xcm-v3-and-bridges#826270f14904f24a6cc90b5cbd1c49da00660c2f"
+dependencies = [
+ "blake2",
+ "byteorder",
+ "digest 0.10.3",
+ "sha2 0.10.2",
+ "sha3 0.10.1",
+ "sp-std 4.0.0 (git+https://github.com/sora-xor/substrate.git?branch=polkadot-v0.9.25-xcm-v3-and-bridges)",
  "twox-hash",
 ]
 
@@ -10412,6 +10414,7 @@ dependencies = [
 [[package]]
 name = "sp-debug-derive"
 version = "4.0.0"
+source = "git+https://github.com/paritytech/substrate?branch=polkadot-v0.9.25#3348e144f0a2b39ce08bd8e3b976c42fe0c990b9"
 dependencies = [
  "proc-macro2",
  "quote",
@@ -10421,21 +10424,11 @@ dependencies = [
 [[package]]
 name = "sp-debug-derive"
 version = "4.0.0"
-source = "git+https://github.com/paritytech/substrate?branch=polkadot-v0.9.25#3348e144f0a2b39ce08bd8e3b976c42fe0c990b9"
+source = "git+https://github.com/sora-xor/substrate.git?branch=polkadot-v0.9.25-xcm-v3-and-bridges#826270f14904f24a6cc90b5cbd1c49da00660c2f"
 dependencies = [
  "proc-macro2",
  "quote",
  "syn",
-]
-
-[[package]]
-name = "sp-externalities"
-version = "0.12.0"
-dependencies = [
- "environmental",
- "parity-scale-codec",
- "sp-std 4.0.0",
- "sp-storage 6.0.0",
 ]
 
 [[package]]
@@ -10447,6 +10440,17 @@ dependencies = [
  "parity-scale-codec",
  "sp-std 4.0.0 (git+https://github.com/paritytech/substrate?branch=polkadot-v0.9.25)",
  "sp-storage 6.0.0 (git+https://github.com/paritytech/substrate?branch=polkadot-v0.9.25)",
+]
+
+[[package]]
+name = "sp-externalities"
+version = "0.12.0"
+source = "git+https://github.com/sora-xor/substrate.git?branch=polkadot-v0.9.25-xcm-v3-and-bridges#826270f14904f24a6cc90b5cbd1c49da00660c2f"
+dependencies = [
+ "environmental",
+ "parity-scale-codec",
+ "sp-std 4.0.0 (git+https://github.com/sora-xor/substrate.git?branch=polkadot-v0.9.25-xcm-v3-and-bridges)",
+ "sp-storage 6.0.0 (git+https://github.com/sora-xor/substrate.git?branch=polkadot-v0.9.25-xcm-v3-and-bridges)",
 ]
 
 [[package]]
@@ -10484,30 +10488,6 @@ dependencies = [
 [[package]]
 name = "sp-io"
 version = "6.0.0"
-dependencies = [
- "futures 0.3.21",
- "hash-db",
- "libsecp256k1",
- "log",
- "parity-scale-codec",
- "parking_lot 0.12.1",
- "secp256k1",
- "sp-core 6.0.0",
- "sp-externalities 0.12.0",
- "sp-keystore 0.12.0",
- "sp-runtime-interface 6.0.0",
- "sp-state-machine 0.12.0",
- "sp-std 4.0.0",
- "sp-tracing 5.0.0",
- "sp-trie 6.0.0",
- "sp-wasm-interface 6.0.0",
- "tracing",
- "tracing-core",
-]
-
-[[package]]
-name = "sp-io"
-version = "6.0.0"
 source = "git+https://github.com/paritytech/substrate?branch=polkadot-v0.9.25#3348e144f0a2b39ce08bd8e3b976c42fe0c990b9"
 dependencies = [
  "futures 0.3.21",
@@ -10531,6 +10511,31 @@ dependencies = [
 ]
 
 [[package]]
+name = "sp-io"
+version = "6.0.0"
+source = "git+https://github.com/sora-xor/substrate.git?branch=polkadot-v0.9.25-xcm-v3-and-bridges#826270f14904f24a6cc90b5cbd1c49da00660c2f"
+dependencies = [
+ "futures 0.3.21",
+ "hash-db",
+ "libsecp256k1",
+ "log",
+ "parity-scale-codec",
+ "parking_lot 0.12.1",
+ "secp256k1",
+ "sp-core 6.0.0 (git+https://github.com/sora-xor/substrate.git?branch=polkadot-v0.9.25-xcm-v3-and-bridges)",
+ "sp-externalities 0.12.0 (git+https://github.com/sora-xor/substrate.git?branch=polkadot-v0.9.25-xcm-v3-and-bridges)",
+ "sp-keystore 0.12.0 (git+https://github.com/sora-xor/substrate.git?branch=polkadot-v0.9.25-xcm-v3-and-bridges)",
+ "sp-runtime-interface 6.0.0 (git+https://github.com/sora-xor/substrate.git?branch=polkadot-v0.9.25-xcm-v3-and-bridges)",
+ "sp-state-machine 0.12.0 (git+https://github.com/sora-xor/substrate.git?branch=polkadot-v0.9.25-xcm-v3-and-bridges)",
+ "sp-std 4.0.0 (git+https://github.com/sora-xor/substrate.git?branch=polkadot-v0.9.25-xcm-v3-and-bridges)",
+ "sp-tracing 5.0.0 (git+https://github.com/sora-xor/substrate.git?branch=polkadot-v0.9.25-xcm-v3-and-bridges)",
+ "sp-trie 6.0.0 (git+https://github.com/sora-xor/substrate.git?branch=polkadot-v0.9.25-xcm-v3-and-bridges)",
+ "sp-wasm-interface 6.0.0 (git+https://github.com/sora-xor/substrate.git?branch=polkadot-v0.9.25-xcm-v3-and-bridges)",
+ "tracing",
+ "tracing-core",
+]
+
+[[package]]
 name = "sp-keyring"
 version = "6.0.0"
 source = "git+https://github.com/paritytech/substrate?branch=polkadot-v0.9.25#3348e144f0a2b39ce08bd8e3b976c42fe0c990b9"
@@ -10539,21 +10544,6 @@ dependencies = [
  "sp-core 6.0.0 (git+https://github.com/paritytech/substrate?branch=polkadot-v0.9.25)",
  "sp-runtime",
  "strum 0.23.0",
-]
-
-[[package]]
-name = "sp-keystore"
-version = "0.12.0"
-dependencies = [
- "async-trait",
- "futures 0.3.21",
- "merlin",
- "parity-scale-codec",
- "parking_lot 0.12.1",
- "schnorrkel",
- "sp-core 6.0.0",
- "sp-externalities 0.12.0",
- "thiserror",
 ]
 
 [[package]]
@@ -10570,6 +10560,22 @@ dependencies = [
  "serde",
  "sp-core 6.0.0 (git+https://github.com/paritytech/substrate?branch=polkadot-v0.9.25)",
  "sp-externalities 0.12.0 (git+https://github.com/paritytech/substrate?branch=polkadot-v0.9.25)",
+ "thiserror",
+]
+
+[[package]]
+name = "sp-keystore"
+version = "0.12.0"
+source = "git+https://github.com/sora-xor/substrate.git?branch=polkadot-v0.9.25-xcm-v3-and-bridges#826270f14904f24a6cc90b5cbd1c49da00660c2f"
+dependencies = [
+ "async-trait",
+ "futures 0.3.21",
+ "merlin",
+ "parity-scale-codec",
+ "parking_lot 0.12.1",
+ "schnorrkel",
+ "sp-core 6.0.0 (git+https://github.com/sora-xor/substrate.git?branch=polkadot-v0.9.25-xcm-v3-and-bridges)",
+ "sp-externalities 0.12.0 (git+https://github.com/sora-xor/substrate.git?branch=polkadot-v0.9.25-xcm-v3-and-bridges)",
  "thiserror",
 ]
 
@@ -10624,6 +10630,7 @@ dependencies = [
 [[package]]
 name = "sp-panic-handler"
 version = "4.0.0"
+source = "git+https://github.com/paritytech/substrate?branch=polkadot-v0.9.25#3348e144f0a2b39ce08bd8e3b976c42fe0c990b9"
 dependencies = [
  "backtrace",
  "lazy_static",
@@ -10633,7 +10640,7 @@ dependencies = [
 [[package]]
 name = "sp-panic-handler"
 version = "4.0.0"
-source = "git+https://github.com/paritytech/substrate?branch=polkadot-v0.9.25#3348e144f0a2b39ce08bd8e3b976c42fe0c990b9"
+source = "git+https://github.com/sora-xor/substrate.git?branch=polkadot-v0.9.25-xcm-v3-and-bridges#826270f14904f24a6cc90b5cbd1c49da00660c2f"
 dependencies = [
  "backtrace",
  "lazy_static",
@@ -10675,22 +10682,6 @@ dependencies = [
 [[package]]
 name = "sp-runtime-interface"
 version = "6.0.0"
-dependencies = [
- "impl-trait-for-tuples",
- "parity-scale-codec",
- "primitive-types",
- "sp-externalities 0.12.0",
- "sp-runtime-interface-proc-macro 5.0.0",
- "sp-std 4.0.0",
- "sp-storage 6.0.0",
- "sp-tracing 5.0.0",
- "sp-wasm-interface 6.0.0",
- "static_assertions",
-]
-
-[[package]]
-name = "sp-runtime-interface"
-version = "6.0.0"
 source = "git+https://github.com/paritytech/substrate?branch=polkadot-v0.9.25#3348e144f0a2b39ce08bd8e3b976c42fe0c990b9"
 dependencies = [
  "impl-trait-for-tuples",
@@ -10706,8 +10697,26 @@ dependencies = [
 ]
 
 [[package]]
+name = "sp-runtime-interface"
+version = "6.0.0"
+source = "git+https://github.com/sora-xor/substrate.git?branch=polkadot-v0.9.25-xcm-v3-and-bridges#826270f14904f24a6cc90b5cbd1c49da00660c2f"
+dependencies = [
+ "impl-trait-for-tuples",
+ "parity-scale-codec",
+ "primitive-types",
+ "sp-externalities 0.12.0 (git+https://github.com/sora-xor/substrate.git?branch=polkadot-v0.9.25-xcm-v3-and-bridges)",
+ "sp-runtime-interface-proc-macro 5.0.0 (git+https://github.com/sora-xor/substrate.git?branch=polkadot-v0.9.25-xcm-v3-and-bridges)",
+ "sp-std 4.0.0 (git+https://github.com/sora-xor/substrate.git?branch=polkadot-v0.9.25-xcm-v3-and-bridges)",
+ "sp-storage 6.0.0 (git+https://github.com/sora-xor/substrate.git?branch=polkadot-v0.9.25-xcm-v3-and-bridges)",
+ "sp-tracing 5.0.0 (git+https://github.com/sora-xor/substrate.git?branch=polkadot-v0.9.25-xcm-v3-and-bridges)",
+ "sp-wasm-interface 6.0.0 (git+https://github.com/sora-xor/substrate.git?branch=polkadot-v0.9.25-xcm-v3-and-bridges)",
+ "static_assertions",
+]
+
+[[package]]
 name = "sp-runtime-interface-proc-macro"
 version = "5.0.0"
+source = "git+https://github.com/paritytech/substrate?branch=polkadot-v0.9.25#3348e144f0a2b39ce08bd8e3b976c42fe0c990b9"
 dependencies = [
  "Inflector",
  "proc-macro-crate",
@@ -10719,7 +10728,7 @@ dependencies = [
 [[package]]
 name = "sp-runtime-interface-proc-macro"
 version = "5.0.0"
-source = "git+https://github.com/paritytech/substrate?branch=polkadot-v0.9.25#3348e144f0a2b39ce08bd8e3b976c42fe0c990b9"
+source = "git+https://github.com/sora-xor/substrate.git?branch=polkadot-v0.9.25-xcm-v3-and-bridges#826270f14904f24a6cc90b5cbd1c49da00660c2f"
 dependencies = [
  "Inflector",
  "proc-macro-crate",
@@ -10779,27 +10788,6 @@ dependencies = [
 [[package]]
 name = "sp-state-machine"
 version = "0.12.0"
-dependencies = [
- "hash-db",
- "log",
- "num-traits",
- "parity-scale-codec",
- "parking_lot 0.12.1",
- "rand 0.7.3",
- "smallvec",
- "sp-core 6.0.0",
- "sp-externalities 0.12.0",
- "sp-panic-handler 4.0.0",
- "sp-std 4.0.0",
- "sp-trie 6.0.0",
- "thiserror",
- "tracing",
- "trie-root",
-]
-
-[[package]]
-name = "sp-state-machine"
-version = "0.12.0"
 source = "git+https://github.com/paritytech/substrate?branch=polkadot-v0.9.25#3348e144f0a2b39ce08bd8e3b976c42fe0c990b9"
 dependencies = [
  "hash-db",
@@ -10820,8 +10808,26 @@ dependencies = [
 ]
 
 [[package]]
-name = "sp-std"
-version = "4.0.0"
+name = "sp-state-machine"
+version = "0.12.0"
+source = "git+https://github.com/sora-xor/substrate.git?branch=polkadot-v0.9.25-xcm-v3-and-bridges#826270f14904f24a6cc90b5cbd1c49da00660c2f"
+dependencies = [
+ "hash-db",
+ "log",
+ "num-traits",
+ "parity-scale-codec",
+ "parking_lot 0.12.1",
+ "rand 0.7.3",
+ "smallvec",
+ "sp-core 6.0.0 (git+https://github.com/sora-xor/substrate.git?branch=polkadot-v0.9.25-xcm-v3-and-bridges)",
+ "sp-externalities 0.12.0 (git+https://github.com/sora-xor/substrate.git?branch=polkadot-v0.9.25-xcm-v3-and-bridges)",
+ "sp-panic-handler 4.0.0 (git+https://github.com/sora-xor/substrate.git?branch=polkadot-v0.9.25-xcm-v3-and-bridges)",
+ "sp-std 4.0.0 (git+https://github.com/sora-xor/substrate.git?branch=polkadot-v0.9.25-xcm-v3-and-bridges)",
+ "sp-trie 6.0.0 (git+https://github.com/sora-xor/substrate.git?branch=polkadot-v0.9.25-xcm-v3-and-bridges)",
+ "thiserror",
+ "tracing",
+ "trie-root",
+]
 
 [[package]]
 name = "sp-std"
@@ -10829,16 +10835,9 @@ version = "4.0.0"
 source = "git+https://github.com/paritytech/substrate?branch=polkadot-v0.9.25#3348e144f0a2b39ce08bd8e3b976c42fe0c990b9"
 
 [[package]]
-name = "sp-storage"
-version = "6.0.0"
-dependencies = [
- "impl-serde",
- "parity-scale-codec",
- "ref-cast",
- "serde",
- "sp-debug-derive 4.0.0",
- "sp-std 4.0.0",
-]
+name = "sp-std"
+version = "4.0.0"
+source = "git+https://github.com/sora-xor/substrate.git?branch=polkadot-v0.9.25-xcm-v3-and-bridges#826270f14904f24a6cc90b5cbd1c49da00660c2f"
 
 [[package]]
 name = "sp-storage"
@@ -10851,6 +10850,19 @@ dependencies = [
  "serde",
  "sp-debug-derive 4.0.0 (git+https://github.com/paritytech/substrate?branch=polkadot-v0.9.25)",
  "sp-std 4.0.0 (git+https://github.com/paritytech/substrate?branch=polkadot-v0.9.25)",
+]
+
+[[package]]
+name = "sp-storage"
+version = "6.0.0"
+source = "git+https://github.com/sora-xor/substrate.git?branch=polkadot-v0.9.25-xcm-v3-and-bridges#826270f14904f24a6cc90b5cbd1c49da00660c2f"
+dependencies = [
+ "impl-serde",
+ "parity-scale-codec",
+ "ref-cast",
+ "serde",
+ "sp-debug-derive 4.0.0 (git+https://github.com/sora-xor/substrate.git?branch=polkadot-v0.9.25-xcm-v3-and-bridges)",
+ "sp-std 4.0.0 (git+https://github.com/sora-xor/substrate.git?branch=polkadot-v0.9.25-xcm-v3-and-bridges)",
 ]
 
 [[package]]
@@ -10885,9 +10897,10 @@ dependencies = [
 [[package]]
 name = "sp-tracing"
 version = "5.0.0"
+source = "git+https://github.com/paritytech/substrate?branch=polkadot-v0.9.25#3348e144f0a2b39ce08bd8e3b976c42fe0c990b9"
 dependencies = [
  "parity-scale-codec",
- "sp-std 4.0.0",
+ "sp-std 4.0.0 (git+https://github.com/paritytech/substrate?branch=polkadot-v0.9.25)",
  "tracing",
  "tracing-core",
  "tracing-subscriber 0.2.25",
@@ -10896,10 +10909,10 @@ dependencies = [
 [[package]]
 name = "sp-tracing"
 version = "5.0.0"
-source = "git+https://github.com/paritytech/substrate?branch=polkadot-v0.9.25#3348e144f0a2b39ce08bd8e3b976c42fe0c990b9"
+source = "git+https://github.com/sora-xor/substrate.git?branch=polkadot-v0.9.25-xcm-v3-and-bridges#826270f14904f24a6cc90b5cbd1c49da00660c2f"
 dependencies = [
  "parity-scale-codec",
- "sp-std 4.0.0 (git+https://github.com/paritytech/substrate?branch=polkadot-v0.9.25)",
+ "sp-std 4.0.0 (git+https://github.com/sora-xor/substrate.git?branch=polkadot-v0.9.25-xcm-v3-and-bridges)",
  "tracing",
  "tracing-core",
  "tracing-subscriber 0.2.25",
@@ -10933,21 +10946,6 @@ dependencies = [
 [[package]]
 name = "sp-trie"
 version = "6.0.0"
-dependencies = [
- "hash-db",
- "memory-db",
- "parity-scale-codec",
- "scale-info",
- "sp-core 6.0.0",
- "sp-std 4.0.0",
- "thiserror",
- "trie-db",
- "trie-root",
-]
-
-[[package]]
-name = "sp-trie"
-version = "6.0.0"
 source = "git+https://github.com/paritytech/substrate?branch=polkadot-v0.9.25#3348e144f0a2b39ce08bd8e3b976c42fe0c990b9"
 dependencies = [
  "hash-db",
@@ -10956,6 +10954,22 @@ dependencies = [
  "scale-info",
  "sp-core 6.0.0 (git+https://github.com/paritytech/substrate?branch=polkadot-v0.9.25)",
  "sp-std 4.0.0 (git+https://github.com/paritytech/substrate?branch=polkadot-v0.9.25)",
+ "thiserror",
+ "trie-db",
+ "trie-root",
+]
+
+[[package]]
+name = "sp-trie"
+version = "6.0.0"
+source = "git+https://github.com/sora-xor/substrate.git?branch=polkadot-v0.9.25-xcm-v3-and-bridges#826270f14904f24a6cc90b5cbd1c49da00660c2f"
+dependencies = [
+ "hash-db",
+ "memory-db",
+ "parity-scale-codec",
+ "scale-info",
+ "sp-core 6.0.0 (git+https://github.com/sora-xor/substrate.git?branch=polkadot-v0.9.25-xcm-v3-and-bridges)",
+ "sp-std 4.0.0 (git+https://github.com/sora-xor/substrate.git?branch=polkadot-v0.9.25-xcm-v3-and-bridges)",
  "thiserror",
  "trie-db",
  "trie-root",
@@ -10992,17 +11006,6 @@ dependencies = [
 [[package]]
 name = "sp-wasm-interface"
 version = "6.0.0"
-dependencies = [
- "impl-trait-for-tuples",
- "log",
- "parity-scale-codec",
- "sp-std 4.0.0",
- "wasmi",
-]
-
-[[package]]
-name = "sp-wasm-interface"
-version = "6.0.0"
 source = "git+https://github.com/paritytech/substrate?branch=polkadot-v0.9.25#3348e144f0a2b39ce08bd8e3b976c42fe0c990b9"
 dependencies = [
  "impl-trait-for-tuples",
@@ -11011,6 +11014,18 @@ dependencies = [
  "sp-std 4.0.0 (git+https://github.com/paritytech/substrate?branch=polkadot-v0.9.25)",
  "wasmi",
  "wasmtime",
+]
+
+[[package]]
+name = "sp-wasm-interface"
+version = "6.0.0"
+source = "git+https://github.com/sora-xor/substrate.git?branch=polkadot-v0.9.25-xcm-v3-and-bridges#826270f14904f24a6cc90b5cbd1c49da00660c2f"
+dependencies = [
+ "impl-trait-for-tuples",
+ "log",
+ "parity-scale-codec",
+ "sp-std 4.0.0 (git+https://github.com/sora-xor/substrate.git?branch=polkadot-v0.9.25-xcm-v3-and-bridges)",
+ "wasmi",
 ]
 
 [[package]]
@@ -12924,7 +12939,7 @@ dependencies = [
  "parity-scale-codec",
  "scale-info",
  "serde",
- "sp-io 6.0.0",
+ "sp-io 6.0.0 (git+https://github.com/sora-xor/substrate.git?branch=polkadot-v0.9.25-xcm-v3-and-bridges)",
  "xcm-procedural",
 ]
 
