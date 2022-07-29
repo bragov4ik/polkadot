@@ -10,18 +10,18 @@ scale-info = { version = "2.1.2", default-features = false, features = ["derive"
 serde = { version = "1.0.137", optional = true, features = ["derive"] }
 log = { version = "0.4.17", default-features = false }
 
-sp-std = { git = "https://github.com/paritytech/substrate", default-features = false, branch = "polkadot-v0.9.25" }
-sp-runtime = { git = "https://github.com/paritytech/substrate", default-features = false, branch = "polkadot-v0.9.25" }
-sp-core = { git = "https://github.com/paritytech/substrate", default-features = false, branch = "polkadot-v0.9.25" }
-sp-io = { git = "https://github.com/paritytech/substrate", default-features = false, branch = "polkadot-v0.9.25" }
-frame-support = { git = "https://github.com/paritytech/substrate", default-features = false, branch = "polkadot-v0.9.25" }
-frame-system = { git = "https://github.com/paritytech/substrate", default-features = false, branch = "polkadot-v0.9.25" }
+sp-std = { git = "https://github.com/sora-xor/substrate.git", default-features = false, branch = "polkadot-v0.9.25-xcm-v3-and-bridges" }
+sp-runtime = { git = "https://github.com/sora-xor/substrate.git", default-features = false, branch = "polkadot-v0.9.25-xcm-v3-and-bridges" }
+sp-core = { git = "https://github.com/sora-xor/substrate.git", default-features = false, branch = "polkadot-v0.9.25-xcm-v3-and-bridges" }
+sp-io = { git = "https://github.com/sora-xor/substrate.git", default-features = false, branch = "polkadot-v0.9.25-xcm-v3-and-bridges" }
+frame-support = { git = "https://github.com/sora-xor/substrate.git", default-features = false, branch = "polkadot-v0.9.25-xcm-v3-and-bridges" }
+frame-system = { git = "https://github.com/sora-xor/substrate.git", default-features = false, branch = "polkadot-v0.9.25-xcm-v3-and-bridges" }
 
 xcm = { path = "..", default-features = false }
 xcm-executor = { path = "../xcm-executor", default-features = false }
 
 [dev-dependencies]
-pallet-balances = { git = "https://github.com/paritytech/substrate", branch = "polkadot-v0.9.25" }
+pallet-balances = { git = "https://github.com/sora-xor/substrate.git", branch = "polkadot-v0.9.25" }
 polkadot-runtime-parachains = { path = "../../runtime/parachains" }
 polkadot-parachain = { path = "../../parachain" }
 xcm-builder = { path = "../xcm-builder" }
