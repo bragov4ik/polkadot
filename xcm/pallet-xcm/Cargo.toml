@@ -21,7 +21,7 @@ xcm = { path = "..", default-features = false }
 xcm-executor = { path = "../xcm-executor", default-features = false }
 
 [dev-dependencies]
-pallet-balances = { git = "https://github.com/sora-xor/substrate.git", branch = "polkadot-v0.9.25" }
+pallet-balances = { git = "https://github.com/sora-xor/substrate.git", branch = "polkadot-v0.9.25-xcm-v3-and-bridges" }
 polkadot-runtime-parachains = { path = "../../runtime/parachains" }
 polkadot-parachain = { path = "../../parachain" }
 xcm-builder = { path = "../xcm-builder" }

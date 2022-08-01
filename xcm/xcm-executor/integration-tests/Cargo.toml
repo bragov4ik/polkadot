@@ -7,19 +7,19 @@ version = "0.9.25"
 
 [dependencies]
 frame-support = { git = "https://github.com/sora-xor/substrate.git", branch = "polkadot-v0.9.25-xcm-v3-and-bridges" }
-frame-system = { git = "https://github.com/sora-xor/substrate.git", branch = "polkadot-v0.9.25" }
+frame-system = { git = "https://github.com/sora-xor/substrate.git", branch = "polkadot-v0.9.25-xcm-v3-and-bridges" }
 futures = "0.3.21"
 pallet-xcm = { path = "../../pallet-xcm" }
 polkadot-test-client = { path = "../../../node/test/client" }
 polkadot-test-runtime = { path = "../../../runtime/test-runtime" }
 polkadot-test-service = { path = "../../../node/test/service" }
-sp-consensus = { git = "https://github.com/sora-xor/substrate.git", branch = "polkadot-v0.9.25" }
-sp-keyring = { git = "https://github.com/sora-xor/substrate.git", branch = "polkadot-v0.9.25" }
+sp-consensus = { git = "https://github.com/sora-xor/substrate.git", branch = "polkadot-v0.9.25-xcm-v3-and-bridges" }
+sp-keyring = { git = "https://github.com/sora-xor/substrate.git", branch = "polkadot-v0.9.25-xcm-v3-and-bridges" }
 sp-runtime = { git = "https://github.com/sora-xor/substrate.git", branch = "polkadot-v0.9.25-xcm-v3-and-bridges" }
-sp-state-machine = { git = "https://github.com/sora-xor/substrate.git", branch = "polkadot-v0.9.25" }
+sp-state-machine = { git = "https://github.com/sora-xor/substrate.git", branch = "polkadot-v0.9.25-xcm-v3-and-bridges" }
 xcm = { path = "../..", default-features = false }
 xcm-executor = { path = ".." }
-sp-tracing = { git = "https://github.com/sora-xor/substrate.git", branch = "polkadot-v0.9.25" }
+sp-tracing = { git = "https://github.com/sora-xor/substrate.git", branch = "polkadot-v0.9.25-xcm-v3-and-bridges" }
 
 [features]
 default = ["std"]

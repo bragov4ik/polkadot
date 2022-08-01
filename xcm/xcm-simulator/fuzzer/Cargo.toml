@@ -10,13 +10,13 @@ codec = { package = "parity-scale-codec", version = "3.0.0" }
 honggfuzz = "0.5.54"
 scale-info = { version = "2.1.2", features = ["derive"] }
 
-frame-system = { git = "https://github.com/sora-xor/substrate.git", branch = "polkadot-v0.9.25" }
-frame-support = { git = "https://github.com/sora-xor/substrate.git", branch = "polkadot-v0.9.25" }
-pallet-balances = { git = "https://github.com/sora-xor/substrate.git", branch = "polkadot-v0.9.25" }
-sp-std = { git = "https://github.com/sora-xor/substrate.git", branch = "polkadot-v0.9.25" }
-sp-core = { git = "https://github.com/sora-xor/substrate.git", branch = "polkadot-v0.9.25" }
-sp-runtime = { git = "https://github.com/sora-xor/substrate.git", branch = "polkadot-v0.9.25" }
-sp-io = { git = "https://github.com/sora-xor/substrate.git", branch = "polkadot-v0.9.25" }
+frame-system = { git = "https://github.com/sora-xor/substrate.git", branch = "polkadot-v0.9.25-xcm-v3-and-bridges" }
+frame-support = { git = "https://github.com/sora-xor/substrate.git", branch = "polkadot-v0.9.25-xcm-v3-and-bridges" }
+pallet-balances = { git = "https://github.com/sora-xor/substrate.git", branch = "polkadot-v0.9.25-xcm-v3-and-bridges" }
+sp-std = { git = "https://github.com/sora-xor/substrate.git", branch = "polkadot-v0.9.25-xcm-v3-and-bridges" }
+sp-core = { git = "https://github.com/sora-xor/substrate.git", branch = "polkadot-v0.9.25-xcm-v3-and-bridges" }
+sp-runtime = { git = "https://github.com/sora-xor/substrate.git", branch = "polkadot-v0.9.25-xcm-v3-and-bridges" }
+sp-io = { git = "https://github.com/sora-xor/substrate.git", branch = "polkadot-v0.9.25-xcm-v3-and-bridges" }
 
 xcm = { path = "../../" }
 xcm-simulator = { path = "../" }
