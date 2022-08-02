@@ -11,13 +11,13 @@ parity-scale-codec = { version = "3.1.2", default-features = false, features = [
 scale-info = { version = "2.1.2", default-features = false, features = ["derive"] }
 xcm = { path = "..", default-features = false }
 xcm-executor = { path = "../xcm-executor", default-features = false }
-sp-std = { git = "https://github.com/sora-xor/substrate.git", branch = "polkadot-v0.9.25-xcm-v3-and-bridges" }
-sp-arithmetic = { git = "https://github.com/sora-xor/substrate.git", branch = "polkadot-v0.9.25-xcm-v3-and-bridges" }
-sp-io = { git = "https://github.com/sora-xor/substrate.git", branch = "polkadot-v0.9.25-xcm-v3-and-bridges" }
-sp-runtime = { git = "https://github.com/sora-xor/substrate.git", branch = "polkadot-v0.9.25-xcm-v3-and-bridges" }
-frame-support = { git = "https://github.com/sora-xor/substrate.git", branch = "polkadot-v0.9.25-xcm-v3-and-bridges" }
-frame-system = { git = "https://github.com/sora-xor/substrate.git", branch = "polkadot-v0.9.25-xcm-v3-and-bridges" }
-pallet-transaction-payment = { git = "https://github.com/sora-xor/substrate.git", branch = "polkadot-v0.9.25-xcm-v3-and-bridges" }
+sp-std = { git = "https://github.com/sora-xor/substrate.git", branch = "polkadot-v0.9.25-xcm-v3-and-bridges", default-features = false }
+sp-arithmetic = { git = "https://github.com/sora-xor/substrate.git", branch = "polkadot-v0.9.25-xcm-v3-and-bridges", default-features = false }
+sp-io = { git = "https://github.com/sora-xor/substrate.git", branch = "polkadot-v0.9.25-xcm-v3-and-bridges", default-features = false }
+sp-runtime = { git = "https://github.com/sora-xor/substrate.git", branch = "polkadot-v0.9.25-xcm-v3-and-bridges", default-features = false }
+frame-support = { git = "https://github.com/sora-xor/substrate.git", branch = "polkadot-v0.9.25-xcm-v3-and-bridges", default-features = false }
+frame-system = { git = "https://github.com/sora-xor/substrate.git", branch = "polkadot-v0.9.25-xcm-v3-and-bridges", default-features = false }
+pallet-transaction-payment = { git = "https://github.com/sora-xor/substrate.git", branch = "polkadot-v0.9.25-xcm-v3-and-bridges", default-features = false }
 log = { version = "0.4.17", default-features = false }
 
 # Polkadot dependencies
